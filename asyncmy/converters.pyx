@@ -46,7 +46,7 @@ cpdef str escape_set(set val, str charset, mapping: dict = None):
 cpdef str escape_bool(int value, mapping: dict = None):
     return str(int(value))
 
-cpdef str escape_int(long long value, mapping: dict = None):
+cpdef str escape_int(value, mapping: dict = None):
     return str(value)
 
 cpdef str escape_float(double value, mapping: dict = None):
