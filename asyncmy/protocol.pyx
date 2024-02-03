@@ -104,8 +104,8 @@ cdef class MysqlPacket:
         self._position += 4
         return result
 
-    cpdef unsigned long read_uint64(self):
-        cdef unsigned long result = Q.unpack_from(self._data, self._position)[0]
+    cpdef unsigned long long read_uint64(self):
+        cdef unsigned long long result = Q.unpack_from(self._data, self._position)[0]
         self._position += 8
         return result
 
