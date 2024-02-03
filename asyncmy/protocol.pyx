@@ -267,7 +267,7 @@ cdef class OKPacketWrapper:
         MysqlPacket packet
         public int affected_rows, server_status, warning_count, has_next
         public bytes message
-        public unsigned long insert_id
+        public unsigned long long insert_id
 
     def __init__(self, MysqlPacket from_packet):
         if not from_packet.is_ok_packet():
